@@ -29,7 +29,17 @@ test('This function should take in a number and multiply it by seven', (expect) 
 
     const actual1 = multiplyBySeven(3);
 
+    const expected2 = 28;
+
+    const actual2 = multiplyBySeven(4);
+
+    const expected3 = 49;
+
+    const actual3 = multiplyBySeven(7);
+
     expect.equal(actual1, expected1, 'should return 21');
+    expect.equal(actual2, expected2, 'should return 28');
+    expect.equal(actual3, expected3, 'should return 49');
 });
 
 
