@@ -6,7 +6,7 @@ import {
 
 const { test, skip } = QUnit;
 
-test('addExlamationPoints should return a string with 3 exclamation points added to the end', (expect) => {
+test('addExclamationPoints should return a string with 3 exclamation points added to the end', (expect) => {
     const expected1 = 'frogs!!!';
     
     const actual1 = addExclamationPoints('frogs');
@@ -129,7 +129,7 @@ test('makeLuckyGreeting should take in two numbers and return a greeting announc
     
     expect.deepEqual(actual1, expected1, 'should return Hello! Your lucky number for the day is 13.');
     expect.deepEqual(actual2, expected2, 'should return Hello! Your lucky number for the day is 22.');
-    expect.deepEqual(actual2, expected2, 'should return Hello! Your lucky number for the day is 19.');
+    expect.deepEqual(actual3, expected3, 'should return Hello! Your lucky number for the day is 19.');
 });
 
 test('getSecondItem should take an array and return the second item in the array', (expect) => {
