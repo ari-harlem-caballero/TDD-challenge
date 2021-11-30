@@ -1,7 +1,7 @@
 // IMPORT MODULES under test here:
 
 import {
-    addExclamationPoints, multiplyBy12ThenHalve, multiplyBySeven,
+    addExclamationPoints, divideThenMultiply, multiplyBy12ThenHalve, multiplyBySeven,
 } from '../functions.js';
 
 const { test, skip } = QUnit;
@@ -24,7 +24,7 @@ test('addExlamationPoints should return a string with 3 exclamation points added
     expect.equal(actual3, expected3, 'should return cows!!!');
 });
 
-test('This function should take in a number and multiply it by seven', (expect) => {
+test('multiplyBySeven should take in a number and multiply it by seven', (expect) => {
     const expected1 = 21;
 
     const actual1 = multiplyBySeven(3);
@@ -42,7 +42,7 @@ test('This function should take in a number and multiply it by seven', (expect) 
     expect.equal(actual3, expected3, 'should return 49');
 });
 
-test('This function should take in a number and multiply it by twelve then cut the result in half', (expect) => {
+test('multiplyBy12ThenHalve should take in a number and multiply it by twelve then cut the result in half', (expect) => {
     const expected1 = 36;
 
     const actual1 = multiplyBy12ThenHalve(6);
@@ -58,6 +58,14 @@ test('This function should take in a number and multiply it by twelve then cut t
     expect.equal(actual1, expected1, 'should return 36');
     expect.equal(actual2, expected2, 'should return 18');
     expect.equal(actual3, expected3, 'should return 168');
+});
+
+test('divideThenMultiply should take in three numbers, divide the first by the second, then multiply the result by the third', (expect) => {
+    const expected1 = 64;
+
+    const actual1 = divideThenMultiply(80, 5, 4);
+
+    expect.equal(actual1, expected1, 'should return 64');
 });
 
 skip('this test should be skipped', (expect) => {
