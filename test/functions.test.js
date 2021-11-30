@@ -136,6 +136,16 @@ test('getSecondItem should take an array and return the second item in the array
     const expected1 = 'apple';
 
     const actual1 = getSecondItem(['orange', 'apple', 'peach', 'lemon']);
+    
+    const expected2 = 'frog';
+
+    const actual2 = getSecondItem(['toad', 'frog', 'salamander']);
+
+    const expected3 = 'joy';
+
+    const actual3 = getSecondItem(['happy', 'joy', 'sad', 'angry']);
 
     expect.deepEqual(actual1, expected1, 'should return apple');
+    expect.deepEqual(actual2, expected2, 'should return frog');
+    expect.deepEqual(actual3, expected3, 'should return joy');
 });
