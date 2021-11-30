@@ -1,7 +1,7 @@
 // IMPORT MODULES under test here:
 
 import {
-    addExclamationPoints, divideThenMultiply, getSecondItem, makeLuckyGreeting, multiplyBy12ThenHalve, multiplyBySeven, returnAsAnArray, returnAsAString,
+    addExclamationPoints, divideThenMultiply, getLastItem, getSecondItem, makeLuckyGreeting, multiplyBy12ThenHalve, multiplyBySeven, returnAsAnArray, returnAsAString,
 } from '../functions.js';
 
 const { test, skip } = QUnit;
@@ -148,4 +148,12 @@ test('getSecondItem should take an array and return the second item in the array
     expect.deepEqual(actual1, expected1, 'should return apple');
     expect.deepEqual(actual2, expected2, 'should return frog');
     expect.deepEqual(actual3, expected3, 'should return joy');
+});
+
+test('getLastItem should take an array and return the LAST item in the array, no matter the arrays length', (expect) => {
+    const expected1 = 'frog';
+
+    const actual1 = getLastItem(['salamander', 'toad', 'axolotl', 'frog']);
+
+    expect.deepEqual(actual1, expected1, 'should return frog');
 });
