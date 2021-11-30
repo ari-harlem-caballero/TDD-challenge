@@ -47,7 +47,17 @@ test('This function should take in a number and multiply it by twelve then cut t
 
     const actual1 = multiplyBy12ThenHalve(6);
 
+    const expected2 = 18;
+
+    const actual2 = multiplyBy12ThenHalve(3);
+
+    const actual3 = 168;
+
+    const expected3 = multiplyBy12ThenHalve(28);
+
     expect.equal(actual1, expected1, 'should return 36');
+    expect.equal(actual2, expected2, 'should return 18');
+    expect.equal(actual3, expected3, 'should return 168');
 });
 
 skip('this test should be skipped', (expect) => {
