@@ -1,7 +1,7 @@
 // IMPORT MODULES under test here:
 
 import {
-    addExclamationPoints, divideThenMultiply, makeLuckyGreeting, multiplyBy12ThenHalve, multiplyBySeven, returnAsAnArray, returnAsAString,
+    addExclamationPoints, divideThenMultiply, getSecondItem, makeLuckyGreeting, multiplyBy12ThenHalve, multiplyBySeven, returnAsAnArray, returnAsAString,
 } from '../functions.js';
 
 const { test, skip } = QUnit;
@@ -119,6 +119,23 @@ test('makeLuckyGreeting should take in two numbers and return a greeting announc
 
     const actual1 = makeLuckyGreeting(7, 6);
 
+    const expected2 = 'Hello! Your lucky number for the day is 22.';
+
+    const actual2 = makeLuckyGreeting(20, 2);
+    
+    const expected3 = 'Hello! Your lucky number for the day is 19.';
+
+    const actual3 = makeLuckyGreeting(7, 12);
+    
     expect.deepEqual(actual1, expected1, 'should return Hello! Your lucky number for the day is 13.');
+    expect.deepEqual(actual2, expected2, 'should return Hello! Your lucky number for the day is 22.');
+    expect.deepEqual(actual2, expected2, 'should return Hello! Your lucky number for the day is 19.');
 });
 
+test('getSecondItem should take an array and return the second item in the array', (expect) => {
+    const expected1 = 'apple';
+
+    const actual1 = getSecondItem(['orange', 'apple', 'peach', 'lemon']);
+
+    expect.deepEqual(actual1, expected1, 'should return apple');
+});
