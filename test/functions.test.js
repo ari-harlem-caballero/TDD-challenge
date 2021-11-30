@@ -115,7 +115,7 @@ test('returnAsAString should take in three numbers and return those numbers mush
 });
 
 test('makeLuckyGreeting should take in two numbers and return a greeting announcing that the sum of those numbers is todays lucky number', (expect) => {
-    const expected1 = 13;
+    const expected1 = 'Hello! Your lucky number for the day is 13.';
 
     const actual1 = makeLuckyGreeting(7, 6);
 
