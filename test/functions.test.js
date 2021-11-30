@@ -15,7 +15,7 @@ test('addExlamationPoints should return a string with 3 exclamation points added
 
     const actual2 = addExclamationPoints('dogs');
     
-    const expected3 = 'cows!!!'
+    const expected3 = 'cows!!!';
 
     const actual3 = addExclamationPoints('cows');
     
