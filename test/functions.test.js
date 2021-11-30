@@ -83,7 +83,17 @@ test('returnAsAnArray should take in three numbers and return those numbers in a
 
     const actual1 = returnAsAnArray(1, 2, 3);
 
+    const expected2 = [2, 6, 10];
+
+    const actual2 = returnAsAnArray(2, 6, 10);
+
+    const expected3 = [3, 30, 15];
+
+    const actual3 = returnAsAnArray(3, 30, 15);
+
     expect.deepEqual(actual1, expected1, 'should return [1, 2, 3]');
+    expect.deepEqual(actual2, expected2, 'should return [2, 6, 10]');
+    expect.deepEqual(actual3, expected3, 'should return [3, 30, 15]');
 });
 
 skip('this test should be skipped', (expect) => {
