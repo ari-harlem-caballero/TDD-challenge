@@ -65,7 +65,17 @@ test('divideThenMultiply should take in three numbers, divide the first by the s
 
     const actual1 = divideThenMultiply(80, 5, 4);
 
+    const expected2 = 300;
+
+    const actual2 = divideThenMultiply(200, 6, 9);
+
+    const expected3 = 42;
+
+    const actual3 = divideThenMultiply(6, 2, 14);
+
     expect.equal(actual1, expected1, 'should return 64');
+    expect.equal(actual2, expected2, 'should return 300');
+    expect.equal(actual3, expected3, 'should return 42');
 });
 
 skip('this test should be skipped', (expect) => {
